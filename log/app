@@ -1,0 +1,78 @@
+{"level":"INFO","time":"2026-07-14 00:40:24","caller":"middleware/logger.go:19","msg":"| 200 |       1.015ms |             ::1 | GET  /api/v1/student/get/2"}
+{"level":"INFO","time":"2026-07-14 00:40:36","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student"}
+{"level":"INFO","time":"2026-07-14 00:40:36","caller":"middleware/logger.go:19","msg":"| 200 |      1.8629ms |             ::1 | POST  /api/v1/student"}
+{"level":"INFO","time":"2026-07-14 00:40:45","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student"}
+{"level":"INFO","time":"2026-07-14 00:40:45","caller":"middleware/logger.go:19","msg":"| 200 |      1.0268ms |             ::1 | POST  /api/v1/student"}
+{"level":"INFO","time":"2026-07-14 00:41:07","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:41:07","caller":"middleware/logger.go:19","msg":"| 200 |      1.6173ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:41:33","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:41:33","caller":"middleware/logger.go:19","msg":"| 200 |      3.0522ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:42:35","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:42:35","caller":"middleware/logger.go:19","msg":"| 200 |      2.7711ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"project/main.go:25","msg":"配置初始化成功"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"project/main.go:34","msg":"数据库连接成功"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"project/main.go:39","msg":"redis连接成功"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"kafka/kafka.go:37","msg":"kafka生产者初始化成功"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"kafka/kafka.go:81","msg":"kafka消费者启动成功"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"kafka/kafka.go:81","msg":"kafka消费者启动成功"}
+{"level":"INFO","time":"2026-07-14 00:42:49","caller":"project/main.go:55","msg":"服务器启动在:8080"}
+{"level":"INFO","time":"2026-07-14 00:42:52","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:42:52","caller":"middleware/logger.go:19","msg":"| 200 |      1.8634ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:44:57","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:44:57","caller":"middleware/logger.go:19","msg":"| 500 |       504.5µs |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:01","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:01","caller":"middleware/logger.go:19","msg":"| 200 |     21.3393ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:02","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:02","caller":"middleware/logger.go:19","msg":"| 200 |       568.9µs |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:02","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:02","caller":"middleware/logger.go:19","msg":"| 200 |      1.0773ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:03","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:03","caller":"middleware/logger.go:19","msg":"| 200 |      1.4038ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:04","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:04","caller":"middleware/logger.go:19","msg":"| 200 |      1.2078ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:04","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:04","caller":"middleware/logger.go:19","msg":"| 200 |      2.3764ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:05","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:05","caller":"middleware/logger.go:19","msg":"| 200 |       2.786ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:42","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:42","caller":"middleware/logger.go:19","msg":"| 200 |      2.2244ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:46","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:46","caller":"middleware/logger.go:19","msg":"| 200 |      2.1246ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:52","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:52","caller":"middleware/logger.go:19","msg":"| 200 |      1.1762ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:57","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:45:57","caller":"middleware/logger.go:19","msg":"| 200 |      1.0766ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"project/main.go:25","msg":"配置初始化成功"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"project/main.go:34","msg":"数据库连接成功"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"project/main.go:39","msg":"redis连接成功"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"kafka/kafka.go:37","msg":"kafka生产者初始化成功"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"kafka/kafka.go:81","msg":"kafka消费者启动成功"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"kafka/kafka.go:81","msg":"kafka消费者启动成功"}
+{"level":"INFO","time":"2026-07-14 00:48:32","caller":"project/main.go:55","msg":"服务器启动在:8080"}
+{"level":"INFO","time":"2026-07-14 00:48:34","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:34","caller":"middleware/logger.go:19","msg":"| 200 |      2.4551ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:36","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:36","caller":"middleware/logger.go:19","msg":"| 200 |      1.0666ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:39","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:48:39","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:48:46","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:46","caller":"middleware/logger.go:19","msg":"| 200 |      3.4693ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:46","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:48:52","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:52","caller":"middleware/logger.go:19","msg":"| 200 |       619.2µs |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:52","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:48:53","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:53","caller":"middleware/logger.go:19","msg":"| 200 |      1.1937ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:53","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:48:54","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:54","caller":"middleware/logger.go:19","msg":"| 200 |       504.5µs |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:48:54","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:49:02","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:49:02","caller":"middleware/logger.go:19","msg":"| 200 |      1.5907ms |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:49:02","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:49:02","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:49:02","caller":"middleware/logger.go:19","msg":"| 200 |       556.9µs |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:49:02","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
+{"level":"INFO","time":"2026-07-14 00:49:06","caller":"middleware/auth.go:27","msg":"用户 admin 访问接口 /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:49:06","caller":"middleware/logger.go:19","msg":"| 200 |       504.4µs |             ::1 | PUT  /api/v1/student/1"}
+{"level":"INFO","time":"2026-07-14 00:49:06","caller":"kafka/student_consumer.go:90","msg":"收到学生更新事件:ID=1"}
