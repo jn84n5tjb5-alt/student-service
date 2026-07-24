@@ -97,5 +97,6 @@ func (h *StudentEventHandler) processEvent(event *model.StudentEvent) error {
 }
 
 func StartStudentConsumer(c context.Context) error {
-	return StartConsumer(c, &StudentEventHandler{})
+	topics := []string{config.GlobalConfig.Kafka.TopicStudentEvent}
+	return StartConsumer(c, topics, &StudentEventHandler{}, config.GlobalConfig.Kafka.GroupID+"-student")
 }

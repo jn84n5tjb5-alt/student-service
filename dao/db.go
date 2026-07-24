@@ -15,5 +15,5 @@ func InitDB(dsn string) error {
 	if err != nil {
 		return err
 	}
-	return DB.AutoMigrate(&model.Student{}, &model.Class{})
+	return DB.AutoMigrate(&model.Student{}, &model.Class{}, &model.AuditLog{}, &model.LocalMessage{})
 }

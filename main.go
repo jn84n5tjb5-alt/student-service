@@ -8,6 +8,7 @@ import (
 	"project/logger"
 	"project/redis"
 	"project/router"
+	"project/service"
 	_ "time/tzdata"
 
 	"github.com/gin-gonic/gin"
@@ -51,6 +52,13 @@ func main() {
 		logger.Errorf("审计消费者启动失败:%v", err)
 		return
 	}
+	if err = kafka.StartImportConsumer(c); err != nil {
+		logger.Errorf("导入消费者启动失败:%v", err)
+		return
+	}
+	service.InitEventPool(100, 1000)
+	defer service.ShutdownEventPool()
+	go service.StartLocalMessageSender(context.Background())
 	r := router.InitRouter()
 	logger.Infof("服务器启动在%s", config.GlobalConfig.Server.Port)
 	err = r.Run(config.GlobalConfig.Server.Port)

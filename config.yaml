@@ -58,3 +58,4 @@ kafka:
   topic_student_event: "student_event" # 学生变更事件主题
   ack_mode: "wait_for_all" # 应答模式：all=所有副本确认，最可靠
   topic_audit_log: "audit.log"
+  topic_import: "student_import"
