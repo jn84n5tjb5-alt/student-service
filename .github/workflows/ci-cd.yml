@@ -1,0 +1,53 @@
+name: CI/CD Pipeline  # 工作流名称
+
+# 触发条件：当代码推送到 main 分支时自动执行
+on:
+  push:
+    branches: [ "main" ]
+
+# 定义这个工作流要执行的任务
+jobs:
+  # 第一个任务：构建和推送镜像
+  build-and-push:
+    runs-on: ubuntu-latest  # 运行环境（GitHub 提供的免费 Linux 虚拟机）
+
+    steps:
+      # 1. 拉取你的代码
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. 设置 Go 环境（用于编译）
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.25'
+
+      # 3. 下载依赖（可选，但为了验证编译）
+      - name: Download dependencies
+        run: go mod download
+
+      # 4. 编译验证（确保代码能编译通过）
+      - name: Build
+        run: go build -v ./...
+
+      # 5. 设置 Docker Buildx（用于构建镜像）
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # 6. 登录 Docker Hub（使用我们刚设置的 Secrets）
+      - name: Login to Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      # 7. 构建并推送镜像
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/student-service:latest
+          # 额外打一个带 commit hash 的标签，便于版本追踪
+          # tags: ${{ secrets.DOCKERHUB_USERNAME }}/student-service:latest,${{ secrets.DOCKERHUB_USERNAME }}/student-service:${{ github.sha }}
